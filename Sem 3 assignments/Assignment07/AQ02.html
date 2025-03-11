@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature rich form</title>
+    <link rel="stylesheet" href="AQ02.css">
+</head>
+<body>
+    <div id="box">
+    <form>
+        <h1><strong> Feedback Form</strong></h1> 
+        <input type="text" name="name" placeholder="Enter Name" id="name" required><br>
+        <input type="email" name="email" placeholder="Enter Email" id="email" required><br>
+        <input type="tel" name="phno" placeholder="Enter Phone Number" id="phone" ><br>
+        <label for="Ratings">1</label>
+        <input type="radio" name="Ratings">
+        <label for="Ratings">2</label>
+        <input type="radio" name="Ratings">
+        <label for="Ratings">3</label>
+        <input type="radio" name="Ratings">
+        <label for="Ratings">4</label>
+        <input type="radio" name="Ratings">
+        <label for="Ratings">5</label>
+        <input type="radio" name="Ratings"><br>
+        <select name="Feedback" id="Feedback">
+            <option value="Complaint">Complaint</option>
+            <option value="Suggestion">Suggestion</option>
+            <option value="Inquiry">Inquiry</option>
+            <option value="Praise">Praise</option>
+        </select><br>
+        
+        <textarea name="Message" maxlength="300" placeholder="Message Here" id="message" ></textarea><br>
+        <input type="file" name="Image" accept=".jpg, .png" id="Image"><br>
+        <input type="reset" value="Clear Form " id="clear"><br>
+        <button name="submit" id="button">SUBMIT</button>
+
+    </form>
+    </div>
+</body>
+</html>

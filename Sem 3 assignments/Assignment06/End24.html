@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th,td {
+            border: 1px solid black;
+        }
+        th, tr:last-child {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>TEAM</th> 
+            <th>NAME</th>
+            <th>SALES</th>
+        </tr>
+        <tr>
+            <td rowspan="2">A</td>
+            <td>DAVID</td>
+            <td>300$</td>
+        </tr>
+        <tr>
+            <td>JOHN</td>
+            <td>400$</td>
+        </tr>
+        <tr>
+            <td rowspan="2">A</td>
+            <td>DAVID</td>
+            <td>300$</td>
+        </tr>
+        <tr>
+            <td>JOHN</td>
+            <td>400$</td>
+        </tr>
+        <tr>
+            <td colspan="2">TOTAL SALES</td>
+            <td>1800$</td>
+        </tr>
+    </table>
+</body>
+</html>

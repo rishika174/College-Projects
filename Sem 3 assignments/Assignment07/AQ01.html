@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Page with Fixed Right Sidebar</title>
+    <style>
+        /* Reset margins and height */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            /* Ensure full height for the body */
+        }
+
+        /* Style for the menu */
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            width: 100px;
+            position: fixed;
+            right: 0;
+            /* Fixed to the right */
+            height: 100%;
+            background-color: gray;
+        }
+
+        /* Style for the main content */
+        .content {
+            margin-right: 120px;
+            /* Leave space for the sidebar */
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Simulating longer content */
+        .spacer {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="https://en.wikipedia.org/wiki/Link">Home</a>
+        <a href="https://en.wikipedia.org/wiki/Link">About</a>
+    </div>
+    <div class="content">
+        <h1>Welcome to the Scrollable Page</h1>
+        <p>
+            This is the main content area. The sidebar remains fixed while the content scrolls.
+        </p>
+        <div class="spacer"></div>
+        <p>End of content. Scroll up to see the menu again.</p>
+    </div>
+</body>
+
+</html>

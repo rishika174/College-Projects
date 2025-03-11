@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee of the Month</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-size: 170%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 500px;
+            padding: 60px;
+            margin: 0;
+            position: relative;
+            background: white;
+        }
+        .border, .corner {
+            position: absolute;
+            background-size: cover;
+        }
+        .border {
+            width: 20px;
+            background-image: url(https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .top {
+            height: 20px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-image: url(https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png);
+        }
+        .bottom {
+            height: 20px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-image: url(https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png);
+        }
+        .left-border { left: 0; top: 0; bottom: 0; }
+        .right-border { right: 0; top: 0; bottom: 0; }
+        .corner {
+            width: 20px;
+            height: 20px;
+            background-image: url('https://cdn5.vectorstock.com/i/1000x1000/97/04/hand-drawn-single-cute-doodle-flower-vector-42259704.jpg');
+        }
+        .top-left { top: 0; left: 0; }
+        .top-right { top: 0; right: 0; }
+        .bottom-left { bottom: 0; left: 0; }
+        .bottom-right { bottom: 0; right: 0; }
+        h1 { font-size: 2em; }
+        h3 { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="top"></div>
+    <div class="box">
+        <h1>Employee of the Month</h1>
+        <h3>Awarded To:</h3>
+        <h3>Rishika Kumari</h3>
+        <h3>Date:</h3>
+        <h3>09/11/24</h3>
+        <div class="border left-border"></div>
+        <div class="border right-border"></div>
+        <div class="corner bottom-left"></div>
+        <div class="corner bottom-right"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>
